@@ -4,10 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page
-    </title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Landing Page</title>
+</head> 
+<body> 
+    <!--Navbar-->
+    <!--We make the navbar position relative because when we going to 
+    the hamburger menu the position will be absolute -->
+    <nav class="relative container mx-auto p-6">
+        <!--Flex container-->
+        <!--A class of .flex automatically put the items in a row to 
+        align items center we use the items-center class and justify content
+        space-between = justify-between -->
+        <div class="flex items-center justify-between">
+            <!--logo with a padding-top of 2-->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt=""/>  
+            </div>  
+            <!--Menu items space-x-6 - margin-left this separates the links
+            we want to hide the flex on small screens and appear
+             on md, lg & xl-->  
+            <div class="hidden md:flex  space-x-6">
+                <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+            </div>   
+            <!--button-->
+            <button>
+                <a href="" class=" hidden md:block text-white bg-brightRed rounded-full p-2 px-3 baseline
+                    hover:bg-brightRedLight
+                ">
+                    Get Started
+                </a>
+            </button>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="hero">
+        <div class="container flex flex-col-reverse md:flex-row 
+        items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+        >
+        <!--left item-->
+        <!--max-w-md means max width from the md going up-->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2 text-left">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    Bring everyone together to build better products
+                </h1>
+                <p class="text-darkGrayishBlue max-w-sm text-center md:text-left">
+                    Manage makes it simple for software teams to plan day-to-day
+                    Tasks while keeping the larger teams goals in view
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="" class="text-white bg-brightRed rounded-full p-2 px-3 baseline
+                        hover:bg-brightRedLight
+                    ">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <!--right item-->
+            <div class="md:w-1/2">
+                <img src="img/illustration-intro.svg" alt=""/>
+            </div>
+        </div>
+    </section>
+
+    <!--Features Section-->
+    <section class="container flex flex-col md:flex-row mx-auto space-x-0 space-y-12 
+        md:space-y-0 px-6 mt-10 mb-10"
+    >
+        <!--Left Feature-->
+        <div class="flex flex-col space-y-6 md:w-1/2">
+            <h1 class="font-bold text-center max-w-md text-2xl md:text-3xl md:text-left">
+                What's different about<br/> Manage?
+            </h1>
+            <p class="text-darkGrayishBlue text-center text-small md:text-left">
+                Manage provides all the functionality your team needs, without
+                the complexity. Our softeare is tailormade for morden digital Product
+                teams.
+            </p>
+        </div>
+
+        <!--Right Feature-->
+        <div class="flex flex-col md:w-1/2 md:space-y-4 space-y-10">
+            <div class="flex space-x-5 sm:flex-col space-y-6">
+                <div class=" flex justify-center  text-white bg-brightRed rounded-full py-1 px-3 baseline
+                hover:bg-brightRedLight my-auto sm:mx-auto
+                ">
+                    01
+                 </div>
+
+                <div class="">
+                    <p class="font-bold text-left max-w-md text-2xl">
+                        Track company-wide progress
+                    </p>
+                    <p class="text-darkGrayishBlue max-w-sm text-center md:text-left">
+                        See how your dat-to-day tasks fit into the wider vision.
+                        Go from tracking progress at the milestone level all the way done to 
+                        the smallest of details.Never lose sight of the bigger picture again.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex space-x-5 sm:flex-col space-y-6">
+                <div class=" flex justify-center  text-white bg-brightRed rounded-full py-1 px-3 baseline
+                hover:bg-brightRedLight my-auto sm:mx-auto
+                ">
+                    02
+                 </div>
+
+                <div>
+                    <p class="font-bold text-left max-w-md text-2xl">
+                        Advanced built-in reports
+                    </p>
+                    <p class="text-darkGrayishBlue max-w-sm text-center md:text-left">
+                        Set internal delivery estimates and track progress towards company 
+                        goals.Our customisable dashbaord helps you built out the reports you need to keep key stakeholders
+                        informed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
