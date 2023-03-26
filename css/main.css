@@ -923,7 +923,7 @@ body{
   height:2px;
   background: #000;
   transform: rotate(0);
-  transition:all 0.5s ease-in ;
+  transition:all 0.3s ease-in ;
 }
 
 .hamburger-bottom{
@@ -948,7 +948,7 @@ body{
 }
 
 .open .hamburger-bottom{
-  transform: rotate(-45deg) translateY(-6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
 @media (max-width: 580px) {
